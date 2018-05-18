@@ -1,4 +1,4 @@
-package hello;
+package hello.tests;
 import static org.junit.Assert.*;
 
 import java.net.URL;
@@ -35,6 +35,6 @@ public class HelloControllerIT {
         ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
 
-        assertEquals(response.getBody(), "Greetings from Spring Boot!");
+        assertEquals(response.getBody(), "Olá, spring boot");
     }
 }
